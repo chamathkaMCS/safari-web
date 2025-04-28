@@ -58,7 +58,7 @@ function toggleHeight(button) {
 
   // Toggle the minHeight of the header based on the aria-expanded value
   var header = document.getElementById("header");
-  header.style.minHeight = isExpanded ? "150px" : "400px"; // Toggle between 200px and 400px
+  header.style.minHeight = isExpanded ? "150px" : "350px"; // Toggle between 200px and 400px
 }
 
 // Get the button
