@@ -17,6 +17,9 @@
   .heading{
     font-size: 3rem !important;
   }
+  .hero h1{
+    font-size: 2rem;
+  }
 }
 
 /* Body Styles */
@@ -102,7 +105,7 @@ body {
     text-align: center;
 }
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #353535;
 }
