@@ -1,89 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safari Tours</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body style="background-image: url('images/wallpaper 3.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <!--backround-->
-    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.651); height: 95vh;padding-left: 0%;">
-        <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.774); width: 100vw; ">
-            <div class="col-12  pt-3 ">
-                <h1 class="text-center" style="color:rgb(255, 255, 255); font-family:Arial, Helvetica, sans-serif; font-weight: 600;">Safari Tours In </h1>
-                <h1 class="text-center" style="color:rgb(255, 255, 255); font-family:Arial, Helvetica, sans-serif; font-weight: 600; font-size: 4em;">SRI LANKA</h1>
-                <!--navigation-->
-                <nav class="navbar navbar-expand-lg navbar-dark m-0">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
-                    </li>
-                    </ul>
-                </div>
-                </nav>
-            </div>
-        </div>
+<body>
+<div id="header-placeholder"></div>
 
+    <!-- Safari Tour Cards -->
+    <div class="container-fluid p-5">
         <div class="row m-5">
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="card" >
-                    <div class="card body">
-                        <h3 class="p-2 text-center">Yala Tour</h3>
-                        <img src="images/jeep 1.jpg" style="height: 25rem; background-size: cover;">
-                        <h6 class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio sunt illo, esse velit officiis doloribus nesciunt nulla adipisci libero?
-                        </h6>
-                        <button class="btn bg-primary m-1 text-white display-6">BOOK TOUR</button>
+            <!-- Card Example -->
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 1.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-1">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-1');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-4">
-                <div class="card" >
-                    <div class="card body">
-                        <h3 class="p-2 text-center">Sigheraja Tour</h3>
-                        <img src="images/jeep 2.jpg" style="height: 25rem; background-size: cover;">
-                        <h6 class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio sunt illo, esse velit officiis doloribus nesciunt nulla adipisci libero?
-                        </h6>
-                        <button class="btn bg-primary m-1 text-white display-6">BOOK TOUR</button>
+
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 2.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-2">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-2');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-4">
-                <div class="card" >
-                    <div class="card body" >
-                        <h3 class="p-2 text-center">Sigiriya Tour</h3>
-                        <img src="images/jeep 3.jpg" style="height: 25rem; background-size: cover;">
-                        <h6 class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio sunt illo, esse velit officiis doloribus nesciunt nulla adipisci libero?
-                        </h6>
-                        <button class="btn bg-primary m-1 text-white display-6">BOOK TOUR</button>
+
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 3.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-3">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-3');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
                     </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 4.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-4">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-4');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 5.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-5">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-5');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card">
+                    <img class="card-img-top custom-card-img" src="images/jeep 6.jpg" alt="Yala Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Yala Tour</h5>
+                        <p class="card-text d-none" id="Details-6">Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-6');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <!-- Payment Popup -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Payment Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="password" class="form-control" id="cvv" placeholder="CVV">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit Payment</button>
+                    </form>
                 </div>
             </div>
         </div>
-        
     </div>
-    <!--footer-->
-  <footer class="bg-dark text-center text-white">
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.774);">
-    © 2025 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">YourCompany</a>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
+    <div id="footer-placeholder"></div>
+  <script src="js/myjavascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
