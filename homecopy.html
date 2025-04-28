@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Safari Tours</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+</head>
+<body style="background-image: url('images/wallpaper 3.jpg'); background-repeat: no-repeat; background-size: cover; overflow-x: hidden; ">
+    <div style="position: fixed; background-color: rgba(255, 255, 255, 0.726); width: 100%; height: 100%; z-index: -5;"></div>
+    <div class="container-fluid" style="width: 100vw; height: 200px; position: absolute; z-index: -1; background-color: rgba(0, 0, 0, 0.5);" id="header"></div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center display-3 m-4 text-light heading" style="font-weight: 600;">Safari Tours</h1>
+        </div>
+    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark m-0 ">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleHeight(this)">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUS.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid p-5">
+        <div class="row p-4 ">
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 1.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Yala Tour</h5>
+                <div class="d-none" id="Details-1">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">4 and half Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-1');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 2.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Singheraja Tour</h5>
+                <div class="d-none" id="Details-2">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">5 Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-2');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 3.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Singheraja Tour</h5>
+                <div class="d-none" id="Details-3">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">5 Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-3');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 4.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Sigiriya Tour</h5>
+                <div class="d-none" id="Details-4">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">5 Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-4');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 5.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Sigiriya Tour</h5>
+                <div class="d-none" id="Details-5">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">3 and half Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-5');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 pt-2">
+                <div class="card">
+                <img class="card-img-top custom-card-img" src="images/jeep 3.jpg" alt="Card image cap" style="height: 15vw; width: auto; object-fit: cover;">
+                <div class="card-body">
+                <h5 class="card-title">Sigiriya Tour</h5>
+                <div class="d-none" id="Details-5">
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">3 and half Hours Tour</small></p>
+                </div>
+                </div>
+                <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                    var details = document.getElementById('Details-5');
+                    if (this.innerText === 'View Details') {
+                        details.className = 'd-block';
+                        this.innerText = 'Hide Details';
+                    } else {
+                        details.className = 'd-none';
+                        this.innerText = 'View Details';
+                    }
+                    ">View Details</button>
+                <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--payment popup-->
+    <div class="modal fade " id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                </div>
+
+                <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" class="form-control" id="cvv" placeholder="CVV">
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit Payment</button>
+                </form>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+    <div class="row fixed-bottom bg-dark text-light p-3 text-center">
+        <div class="col-12">
+            <p>&copy; 2025 Wild Lanka Safaris. All Rights Reserved. | Designed with ❤️ in Sri Lanka</p>
+        </div>
+    </div>
+<script src="js/myjavascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
