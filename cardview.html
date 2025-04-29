@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Tours</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+    <!-- Safari Tour Cards -->
+    <div class="container-fluid p-5">
+        <div class="row my-5">
+            <!-- Card Example -->
+            <div class="col-lg-4 col-md-6 p-3">
+                <div class="card" style="box-shadow: 5px 5px 5px rgb(194, 194, 194); border-radius: 2%;overflow: hidden;">
+                    <img class="card-img-top" src="images/jeep 1.jpg" alt="Yala Tour">
+                    <div class="card-img-top" style="position: absolute;background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgb(255, 255, 255)); width: 100%; height:100%;z-index: 1;"></div>
+                    <div class="card-body" style="z-index: 2;">
+                        <h5 class="card-title" >Yala Safari Tour</h5>
+                        <div class="d-none" id="Details-1">
+                            <p class="card-text"> Explore the stunning wildlife of Yala, home to leopards, elephants, and various bird species.</p>
+                            <h4>Per Person - <span class="text-success">15,000/=</span></h4>
+                            <p class="card-text"><small class="text-muted"> 4 and Half Hours Tour</small></p>
+                            <hr>
+                        </div>
+                        <button id="toggleButton" class="btn btn-outline-primary m-2" onclick="
+                            var details = document.getElementById('Details-1');
+                            if (this.innerText === 'View Details') {
+                                details.className = 'd-block';
+                                this.innerText = 'Hide Details';
+                            } else {
+                                details.className = 'd-none';
+                                this.innerText = 'View Details';
+                            }
+                            ">View Details</button>
+                        <button class="btn btn-primary m-2" data-toggle="modal" data-target="#paymentModal">Book Tour</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <!-- Payment Popup -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Payment Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="password" class="form-control" id="cvv" placeholder="CVV">
+                        </div>
+                        <button type="submit" class="btn btn-success" onclick="alert('Ooops...This section is under construction!!!')">Submit Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+  <script src="js/myjavascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

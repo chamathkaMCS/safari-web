@@ -48,12 +48,30 @@ body {
     transform: scale(1.05);
 }
 
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+  }
+
 .card-img-top {
-    height: 15vw;
-    width: auto;
+    height: 35vh;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
-}
+    border: none;
+  }
+
+.image-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.199), rgb(255, 255, 255));
+    pointer-events: none;
+  }
 
 .card-body {
     padding: 1.5rem;
